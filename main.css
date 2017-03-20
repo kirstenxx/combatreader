@@ -1,0 +1,309 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("img/background.jpeg");
+  color: #000;
+  transition: background 0.1s linear;
+  margin: 3rem;
+}
+
+body, input, textarea, button {
+  font-size: 1.4rem;
+  font-family: Open Sans, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+@charset "UTF-8";
+.navigation ul{
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+}
+.navigation li {
+  font-size: 2rem;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.combatreader {
+  position: relative;
+  max-width: 30rem;
+  padding: 1rem 0 1.2rem;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 10rem auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1em;
+}
+.combatreader:before, .combatreader:after {
+  position: absolute;
+  left: 40%;
+  height: 0.8rem;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #000;
+}
+.combatreader:before {
+  top: 0;
+}
+.combatreader:after {
+  bottom: 0;
+}
+
+.combatreader-word {
+  font-size: 1.6em;
+  line-height: 1.6em;
+  height: 1.7em;
+  font-weight: 600;
+  color: #000;
+}
+
+.combatreader-word div {
+  display: table-cell;
+}
+.combatreader-word div:first-child {
+  width: 40%;
+  text-align: right;
+}
+
+.combatreader-word div:last-child {
+  width: 60%;
+  text-align: left;
+}
+
+.controls {
+  text-align: center;
+}
+.controls:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.controls a {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 150ms linear;
+}
+.controls a:hover, .controls a.active {
+  color: #777;
+}
+.settings input, .settings textarea, .settings button {
+  box-sizing: border-box;
+  border: 0;
+  color: #000;
+  background: transparent;
+}
+.settings input:focus, .settings textarea:focus, .settings button:focus {
+  outline: none;
+}
+
+.settings-controls {
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.settings-controls .speed {
+  float: left;
+}
+.settings-controls .interaction {
+  float: right;
+}
+.settings-controls a {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+.settings-controls .save {
+  transition: opacity 0.2s linear;
+  opacity: 0;
+  font-size: 2.5rem;
+}
+.paused .settings-controls .save {
+  opacity: 1;
+}
+.autosave .settings-controls .save {
+  opacity: 0;
+}
+.settings-controls .save.active {
+  opacity: 0.4 !important;
+}
+.settings-controls .pause {
+  margin: 0;
+  width: 4rem;
+  text-align: center;
+  font-size: 4rem;
+}
+.paused .settings-controls .pause:before {
+  content: "\f04b";
+  position: relative;
+  margin-left: -0.4rem;
+}
+
+.wpm {
+  position: relative;
+  display: inline-block;
+  width: 7rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 4rem;
+  vertical-align: top;
+}
+.wpm::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.words {
+  max-width: 30rem;
+  margin: 0 auto;
+  position: relative;
+  transition: max-width 0.2s linear;
+}
+.fullscreen .words {
+  max-width: 60rem;
+}
+.fullscreen .words .demo-words {
+  height: 30rem;
+}
+.words .demo-words {
+  width: 100%;
+  height: 5em;
+  transition: height 0.2s linear;
+  padding: 1rem 1.5rem;
+  background-color: #eee;
+}
+.words .demo-words::-webkit-scrollbar {
+  width: 0.8rem;
+}
+.words .demo-words::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+}
+
+.progress-bar {
+  height: 2px;
+  width: 0;
+  background: red;
+  opacity: 0.4;
+}
+
+.words-controls {
+  margin: 0 0 2rem;
+}
+.words-controls a {
+  margin: 0 0.6rem;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.words-controls .refresh {
+  font-size: 2.6rem;
+}
+.fullscreen .words-controls .expand:before {
+  content: "\f0b2";
+}
+
+.light {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  font-size: 3rem;
+  font-family: "FontAwesome", sans-serif;
+  text-decoration: none;
+}
+
+#alert {
+  position: absolute;
+  top: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  pointer-events: none;
+}
+
+::selection {
+  background: #aaa;
+  color: #eee;
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="entypo-"]:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.entypo-fast-backward:before {
+  content: "\f049";
+}
+
+.entypo-fast-forward:before {
+  content: "\f050";
+}
+
+.entypo-save:before {
+  content: "\f0c7";
+}
+
+.entypo-left-open:before {
+  content: "\f04a";
+}
+
+.entypo-pause:before {
+  content: "\f04c";
+}
+
+.entypo-right-open:before {
+  content: "\f04e";
+}
+
+.entypo-dot-3:before {
+  content: "\f192";
+}
+
+.entypo-minus:before {
+  content: "\f068";
+}
+
+.entypo-search:before {
+  content: "\f002";
+}
+
+.entypo-plus:before {
+  content: "\f067";
+}
+
+.entypo-cancel:before {
+  content: "\f00d";
+}
+
+.entypo-doc-text:before {
+  content: "\f11c";
+}
+
+.entypo-cycle:before {
+  content: "\f021";
+}
+
+.entypo-resize-full:before {
+  content: "\f047";
+}
