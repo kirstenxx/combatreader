@@ -1,0 +1,364 @@
+
+/* Fonts
+-------------------------------------------------- */
+
+@font-face {
+    font-family: "SocialicoRegular";
+    src: url('/font/socialico-webfont.eot');
+    src: url('/font/socialico-webfont.eot?#iefix') format('eot'),
+    url('/font/socialico-webfont.woff') format('woff'),
+    url('/font/socialico-webfont.ttf') format('truetype'),
+    url('/font/socialico-webfont.svg#SocialicoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Socialico, Social Media Icons
+-------------------------------------------------- */
+
+[class^="socicon"]:before, [class * =" socicon"]:before {
+    font-family: SocialicoRegular;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 32px;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+a [class^="socicon"], a [class * =" socicon"] {
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+    vertical-align: top;
+    font-size: 1.3333333333333333em;
+}
+
+li [class^="socicon"], li [class * =" socicon"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+li .large[class^="socicon"], li .large[class * =" socicon"] {
+    /* 1.5 increased font size for .large * 1.25 width */
+    width: 1.875em;
+}
+
+li[class^="socicon"], li[class * =" socicon"] {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+li[class^="socicon"]:before, li[class * =" socicon"]:before {
+    text-indent: -2em;
+    text-align: center;
+}
+
+li[class^="socicon"].large:before, li[class * =" socicon"].large:before {
+    text-indent: -1.3333333333333333em;
+}
+
+/* available social icons */
+.twitterbird.socicon:before {
+    position: relative;
+    left: -3px;
+}
+
+.circle.socicon:before {
+    content: "\0020"
+}
+
+.soundcloudcircle.socicon:before {
+    content: "\0021"
+}
+
+.mobilemecircle.socicon:before {
+    content: "\0024"
+}
+
+.pinterestcircle.socicon:before {
+    content: "\0026"
+}
+
+.downloadcircle.socicon:before {
+    content: "\0028"
+}
+
+.refreshcircle.socicon:before {
+    content: "\0029"
+}
+
+.flowercircle.socicon:before {
+    content: "\002C"
+}
+
+.starcircle.socicon:before {
+    content: "\002D"
+}
+
+.musiccircle.socicon:before {
+    content: "\002E"
+}
+
+.foursquarecircle.socicon:before {
+    content: "\002F"
+}
+
+.windowscircle.socicon:before {
+    content: "\0030"
+}
+
+.pluscircle.socicon:before {
+    content: "\0031"
+}
+
+.linkcircle.socicon:before {
+    content: "\0032"
+}
+
+.heartcircle.socicon:before {
+    content: "\0033"
+}
+
+.aperturecircle.socicon:before {
+    content: "\0034"
+}
+
+.filmcircle.socicon:before {
+    content: "\0035"
+}
+
+.lastfmcircle.socicon:before {
+    content: "\0036"
+}
+
+.mappincircle.socicon:before {
+    content: "\0037"
+}
+
+.waterdropcircle.socicon:before {
+    content: "\0038"
+}
+
+.qikcircle.socicon:before {
+    content: "\0033"
+}
+
+.messagecircle.socicon:before {
+    content: "\003F"
+}
+
+.applecircle.socicon:before {
+    content: "\0040"
+}
+
+.amazon.socicon:before {
+    content: "\0041"
+}
+
+.bebo.socicon:before {
+    content: "\0042"
+}
+
+.appstore.socicon:before {
+    content: "\0043"
+}
+
+.dribbble.socicon:before {
+    content: "\0044"
+}
+
+.behance.socicon:before {
+    content: "\0045"
+}
+
+.facebook.socicon:before {
+    content: " \0046"
+}
+
+.google.socicon:before {
+    content: "\0047"
+}
+
+.skype.socicon:before {
+    content: "\0048"
+}
+
+.linkedin.socicon:before {
+    content: "\0049"
+}
+
+.deviantart.socicon:before {
+    content: "\004A"
+}
+
+.bing.socicon:before {
+    content: "\004B"
+}
+
+.twitterbird.socicon:before {
+    content: "\004C"
+}
+
+.myspace.socicon:before {
+    content: "\004D"
+}
+
+.flickr.socicon:before {
+    content: "\004E"
+}
+
+.tumblr.socicon:before {
+    content: "\004F"
+}
+
+.paypal.socicon:before {
+    content: "\0050"
+}
+
+.quora.socicon:before {
+    content: "\0051"
+}
+
+.rss.socicon:before {
+    content: "\0052"
+}
+
+.stumbleupon.socicon:before {
+    content: "\0053"
+}
+
+.twitter.socicon:before {
+    content: "\0054"
+}
+
+.blogger.socicon:before {
+    content: "\0055"
+}
+
+.vimeo.socicon:before {
+    content: "\0056"
+}
+
+.wordpress.socicon:before {
+    content: "\0057"
+}
+
+.youtube.socicon:before {
+    content: "\0058"
+}
+
+.yahoo.socicon:before {
+    content: "\0059"
+}
+
+.aol.socicon:before {
+    content: "\005A"
+}
+
+.amazoncircle.socicon:before {
+    content: "\0061"
+}
+
+.bebocircle.socicon:before {
+    content: "\0062"
+}
+
+.appstorecircle.socicon:before {
+    content: "\0063"
+}
+
+.dribbblecircle.socicon:before {
+    content: "\0064"
+}
+
+.behancecircle.socicon:before {
+    content: "\0065"
+}
+
+.facebookcircle.socicon:before {
+    content: "\0066"
+}
+
+.googlecircle.socicon:before {
+    content: "\0067"
+}
+
+.skypecircle.socicon:before {
+    content: "\0068"
+}
+
+.linkedincircle.socicon:before {
+    content: "\0069"
+}
+
+.deviantartcircle.socicon:before {
+    content: "\006A"
+}
+
+.bingcircle.socicon:before {
+    content: "\006B"
+}
+
+.twitterbirdcircle.socicon:before {
+    content: "\006C"
+}
+
+.myspacecircle.socicon:before {
+    content: "\006D"
+}
+
+.flickrcircle.socicon:before {
+    content: "\006E"
+}
+
+.tumblrcircle.socicon:before {
+    content: "\006F"
+}
+
+.paypalcircle.socicon:before {
+    content: "\0070"
+}
+
+.quoracircle.socicon:before {
+    content: "\0071"
+}
+
+.rsscircle.socicon:before {
+    content: "\0072"
+}
+
+.stumbleuponcircle.socicon:before {
+    content: "\0073"
+}
+
+.twittercircle.socicon:before {
+    content: "\0074"
+}
+
+.bloggercircle.socicon:before {
+    content: "\0075"
+}
+
+.vimeocircle.socicon:before {
+    content: "\0076"
+}
+
+.wordpresscircle.socicon:before {
+    content: "\0077"
+}
+
+.youtubecircle.socicon:before {
+    content: "\0078"
+}
+
+.yahoocircle.socicon:before {
+    content: "\0079"
+}
+
+.aolcircle.socicon:before {
+    content: "\007A"
+}
