@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-image: url("/Users/kirstenberg/Documents/code/combatreader/img/background.jpeg");
+  background-image: url("img/background.jpeg");
   color: #000;
   transition: background 0.1s linear;
   margin: 3rem;
