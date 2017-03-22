@@ -6,7 +6,6 @@ body {
   background-image: url("img/background.jpeg");
   color: #000;
   transition: background 0.1s linear;
-  margin: 3rem;
 }
 
 body, input, textarea, button {
@@ -18,6 +17,15 @@ a {
   text-decoration: none;
 }
 @charset "UTF-8";
+.logo {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.navigation {
+	background-color: #6a0e0e;
+	width: 100%;
+	margin-top: 1rem;
+}
 .navigation ul{
   list-style: none;
   justify-content: center;
@@ -26,15 +34,22 @@ a {
   margin-bottom: 2em;
 }
 .navigation li {
+	color: white;
   font-size: 2rem;
   padding-left: 2em;
   padding-right: 2em;
 	text-decoration: none;
+	flex-direction: column;
 }
 .navigation a {
 	text-decoration: none;
+	color: #918981;
 }
-
+.navigation a:hover {
+	text-decoration: none;
+	color: #bdb2a8;
+	text-transform: uppercase;
+}
 .main {
 	height: 100%;
 	text-align: center;
@@ -46,10 +61,13 @@ body, .main, .behind-main {
 }
 
 h1 {
-	font-weight:200;
 	color: #fff;
 	font-family: 'Alfa Slab One', cursive;
 	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #5b5b5b;
+	letter-spacing: .2em;
+	font-size: 2.6em;
+	margin-bottom: 30px;
 }
 
 .header {
@@ -83,6 +101,8 @@ h1 {
 }
 .reads {
 	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 .start-here {
 	font-weight:bold;
@@ -177,8 +197,8 @@ h1 {
 	color: #6e6257;
 	font-weight: bold;
 }
-
 .controls a {
+	text-align: center;
 	display:block;
 	padding: 5px;
 	opacity: 0.37;
@@ -189,10 +209,13 @@ h1 {
 .controls a:hover {
 	opacity: 0.75;
 	background: #ddd;
+	color:
 }
 
 .control-button {
 	width: 50px;
+	justify-content: center;
+	float: none;
 }
 
 .wpm-area {
@@ -215,8 +238,8 @@ h1 {
 
 #wpm {
 	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	font-family: "Helvetica Neue";
 	color: #6e6257;
 
 	margin: 0px;
@@ -289,11 +312,6 @@ h1 {
 	max-width: 700px;
 
 	text-align: left;
-}
-
-#url-input {
-	width: 100%;
-	font-family: "Helvetica Neue";
 }
 
 .btn {
