@@ -6,6 +6,7 @@ body {
   background-image: url("img/background.jpeg");
   color: #000;
   transition: background 0.1s linear;
+  width: 100%;
 }
 
 body, input, textarea, button {
@@ -353,12 +354,24 @@ footer {
 
 /*ABOUT PAGE*/
 .aboutpage {
-  align-items: center;
+  max-width: 940px;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: white;
+  opacity: .7;
+  float: none;
 }
 .about {
   font-size: 14px;
+  font-weight: bolder;
+}
+.about1 {
+
 }
 .section {
+  width: 100%;
+  color: white;
   text-align: right;
-  font-style: italic;
+  background-color: #6a0e0e;
+  margin-right: 15px;
 }
