@@ -47,7 +47,7 @@ a {
 }
 .navigation a:hover {
 	text-decoration: none;
-	color: #bdb2a8;
+	color: #FFFFFF;
 	text-transform: uppercase;
 }
 .main {
@@ -112,6 +112,7 @@ h1 {
 #combatreader{
 	display: flex;
 	justify-content: center;
+  padding-bottom: 2rem;
 }
 .reader-wrapper {
 	margin-top: 25px;
@@ -345,4 +346,15 @@ textarea {
 
 .nopadding {
 	padding: 0px;
+}
+footer {
+  font-size: 10px;
+}
+
+/*ABOUT PAGE*/
+.aboutpage {
+  align-items: center;
+}
+.about {
+  font-size: 14px;
 }
