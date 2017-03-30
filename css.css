@@ -358,3 +358,7 @@ footer {
 .about {
   font-size: 14px;
 }
+.section {
+  text-align: right;
+  font-style: italic;
+}
